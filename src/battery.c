@@ -18,6 +18,10 @@ int init_battery_monitor() {
     return 1;
 }
 
+
+
+
+
 // Read battery status (charge percentage and charging state)
 int get_battery_status(BatteryStatus *status) {
     if (!status) {
