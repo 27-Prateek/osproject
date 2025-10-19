@@ -22,5 +22,6 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 
 clean:
 	rm -rf $(BUILD_DIR)
+	rm -f scheduler.log battery_data.csv
 
 .PHONY: all clean
