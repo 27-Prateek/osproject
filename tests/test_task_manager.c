@@ -1,3 +1,4 @@
+// /home/nishit/Desktop/OS/nishit/osproject/src/task_manager.c
 #include "../include/task_manager.h"
 #include "../include/utils.h"
 #include <stdio.h>
@@ -265,7 +266,7 @@ void test_task_statistics(void) {
     Task *task = create_task("TestTask", PRIORITY_HIGH, ENERGY_LOW, 100, false, 5000);
     
     TaskStats *stats = get_task_statistics();
-    int initial_total = stats->total_tasks;
+    //int initial_total = stats->total_tasks;
     
     TEST_ASSERT(stats->total_tasks > 0, "Total tasks count updated");
     

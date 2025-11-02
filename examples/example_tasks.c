@@ -1,3 +1,4 @@
+// /home/nishit/Desktop/OS/nishit/osproject/examples/example_tasks.c
 #include "../include/scheduler.h"
 #include "../include/battery_monitor.h"
 #include "../include/task_manager.h"

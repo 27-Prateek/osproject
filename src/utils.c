@@ -1,3 +1,5 @@
+// /home/nishit/Desktop/OS/nishit/osproject/src/utils.c
+#define _DEFAULT_SOURCE
 #include "../include/utils.h"
 #include <sys/time.h>
 #include <unistd.h>
@@ -17,6 +19,32 @@ void sleep_ms(int milliseconds) {
     usleep(milliseconds * 1000);
 }
 
+// Global log file pointers
+static FILE *log_file = NULL;
+
+// Initialize logging
+void init_logging(void) {
+    log_file = fopen("logs/scheduler.log", "w");
+    if (log_file) {
+        log_info("=== Logging initialized ===\n");
+    }
+}
+
+// Close logging
+void close_logging(void) {
+    if (log_file) {
+        log_info("=== Logging closed ===\n");
+        fclose(log_file);
+        log_file = NULL;
+    }
+}
+
+// Get current timestamp
+void get_timestamp(char *buffer, size_t size) {
+    time_t now = time(NULL);
+    struct tm *tm_info = localtime(&now);
+    strftime(buffer, size, "[%a %b %d %H:%M:%S %Y]", tm_info);
+}
 
 // LOGGING UTILITIES
 
@@ -33,22 +61,76 @@ void log_message(const char *level, const char *message) {
 }
 
 // Log error message
-void log_error(const char *message) {
-    char formatted_msg[MAX_LOG_MSG];
-    snprintf(formatted_msg, MAX_LOG_MSG, "ERROR: %s", message);
-    log_message("ERROR", message);
+void log_error(const char *format, ...) {
+    char timestamp[100];
+    get_timestamp(timestamp, sizeof(timestamp));
+    
+    // Print to console
+    printf("%s [ERROR] ", timestamp);
+    va_list args;
+    va_start(args, format);
+    vprintf(format, args);
+    va_end(args);
+    printf("\n");
+
+    // Write to log file
+    if (log_file) {
+        fprintf(log_file, "%s [ERROR] ", timestamp);
+        va_start(args, format);
+        vfprintf(log_file, format, args);
+        va_end(args);
+        fprintf(log_file, "\n"); 
+        fflush(log_file);
+    }
 }
 
 // Log info message
-void log_info(const char *message) {
-    log_message("INFO", message);
+void log_info(const char *format, ...) {
+    char timestamp[100];
+    get_timestamp(timestamp, sizeof(timestamp));
+    
+    // Print to console
+    printf("%s [INFO] ", timestamp);
+    va_list args;
+    va_start(args, format);
+    vprintf(format, args);
+    va_end(args);
+    printf("\n");
+
+    // Write to log file
+    if (log_file) {
+        fprintf(log_file, "%s [INFO] ", timestamp);
+        va_start(args, format);
+        vfprintf(log_file, format, args);
+        va_end(args);
+        fprintf(log_file, "\n"); 
+        fflush(log_file);
+    }
 }
 
 // Log debug message
-void log_debug(const char *message) {
-    log_message("DEBUG", message);
+void log_debug(const char *format, ...) {
+    char timestamp[100];
+    get_timestamp(timestamp, sizeof(timestamp));
+    
+    // Print to console
+    printf("%s [DEBUG] ", timestamp);
+    va_list args;
+    va_start(args, format);
+    vprintf(format, args);
+    va_end(args);
+    printf("\n");
+    
+    // Write to log file
+    if (log_file) {
+        fprintf(log_file, "%s [DEBUG] ", timestamp);
+        va_start(args, format);
+        vfprintf(log_file, format, args);
+        va_end(args);
+        fprintf(log_file, "\n"); 
+        fflush(log_file);
+    }
 }
-
 
 // STRING UTILITIES
 

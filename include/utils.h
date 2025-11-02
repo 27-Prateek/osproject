@@ -1,14 +1,14 @@
 #ifndef UTILS_H
 #define UTILS_H
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <stdbool.h>
+#include <stdarg.h>
 
 // CONSTANTS AND MACROS
-
 #define MAX_TASKS 50
 #define MAX_TASK_NAME 64
 #define MAX_LOG_MSG 256
@@ -33,7 +33,6 @@
 #define SUCCESS 0
 #define ERROR -1
 
-
 // DATA STRUCTURES
 
 // Battery state enumeration
@@ -53,17 +52,30 @@ typedef enum {
     TASK_STATE_SUSPENDED
 } TaskState;
 
+// ===== LOGGING FUNCTIONS =====
+void init_logging(void);
+void close_logging(void);
+void get_timestamp(char *buffer, size_t size);
+void log_info(const char *format, ...);
+void log_debug(const char *format, ...);
+void log_error(const char *format, ...);
+void log_message(const char *level, const char *message);
+
+// ===== DISPLAY FUNCTIONS =====
+void print_status(void);
+void display_all_tasks(void);
+void display_ready_queue(void);
+void print_battery_status(void);
+void print_scheduler_status(void);
+void print_task_statistics(void);
+void print_scheduler_statistics(void);
+void display_statistics(void);
 
 // UTILITY FUNCTIONS
+
 // Time utilities
 long get_current_time_ms(void);
 void sleep_ms(int milliseconds);
-
-// Logging utilities
-void log_message(const char *level, const char *message);
-void log_error(const char *message);
-void log_info(const char *message);
-void log_debug(const char *message);
 
 // String utilities
 char* trim_whitespace(char *str);

@@ -1,3 +1,4 @@
+// /home/nishit/Desktop/OS/nishit/osproject/src/task_manager.c
 #include "../include/task_manager.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -268,7 +269,7 @@ int update_task_times(Task *task) {
         return ERROR;
     }
     
-    long current_time = get_current_time_ms();
+    // long current_time = get_current_time_ms();
     
     if (task->completion_time > 0) {
         task->turnaround_time = task->completion_time - task->arrival_time;

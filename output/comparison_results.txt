@@ -1,0 +1,37 @@
+BATTERY-AWARE SCHEDULER - COMPARISON RESULTS
+=============================================
+
+[RUN 1] BATTERY-AWARE SCHEDULING
+================================
+Final Battery Level: 0%
+Tasks Completed: 7
+Context Switches: 53
+Energy Consumed: 114 units
+CPU Utilization: 0.00%
+
+
+[RUN 2] STANDARD FCFS SCHEDULING
+================================
+Final Battery Level: 0%
+Tasks Completed: 8
+Context Switches: 55
+Energy Consumed: 120 units
+CPU Utilization: 0.00%
+
+
+========================================
+COMPARISON SUMMARY
+========================================
+
+BATTERY-AWARE SCHEDULING BENEFITS:
+Battery Saved: 0%
+Energy Saved: 6 units
+Efficiency Improvement: 0.00%
+
+Detailed Comparison:
+Final Battery (Aware): 0%, Standard: 0%
+Energy Consumed (Aware): 114, Standard: 120
+Tasks Completed (Aware): 7, Standard: 8
+
+CONCLUSION:
+ℹ Both schedulers used similar battery

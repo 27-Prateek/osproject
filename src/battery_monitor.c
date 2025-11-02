@@ -1,3 +1,4 @@
+// /home/nishit/Desktop/OS/nishit/osproject/include/scheduler.h
 #include "../include/battery_monitor.h"
 #include <stdio.h>
 #include <stdlib.h>

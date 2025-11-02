@@ -1,3 +1,4 @@
+// /home/nishit/Desktop/OS/nishit/osproject/include/scheduler.h
 #include "../include/scheduler.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -543,6 +544,10 @@ Task* schedule_battery_aware(void) {
     
     int battery_level = get_battery_level();
     TaskQueue *queue = scheduler_state.ready_queue;
+    char log_msg[MAX_LOG_MSG];
+    snprintf(log_msg, MAX_LOG_MSG, "Battery-aware scheduling: Battery=%d%%, Mode=%d",
+             battery_level, scheduler_state.mode);
+    log_debug(log_msg);
     
     // Adjust scheduling based on battery mode
     if (scheduler_state.mode == MODE_CRITICAL) {
@@ -615,8 +620,10 @@ void scheduler_run_loop(void) {
         log_error("Scheduler not initialized");
         return;
     }
-    
+
     log_info("Entering scheduler main loop");
+    int idle_count = 0;  // ← ADD THIS: Track consecutive idles
+    const int MAX_IDLE = 10;  // ← Maximum idle iterations before exit
     
     while (scheduler_state.is_running) {
         // Update battery status
@@ -629,6 +636,8 @@ void scheduler_run_loop(void) {
         Task *next_task = select_next_task();
         
         if (next_task != NULL) {
+            idle_count = 0;  // ← Reset idle counter when task found
+            
             // Context switch if different task
             if (scheduler_state.current_task != next_task) {
                 perform_context_switch(scheduler_state.current_task, next_task);
@@ -646,12 +655,19 @@ void scheduler_run_loop(void) {
             // No tasks available, idle
             log_debug("No tasks in ready queue, idling...");
             sleep_ms(100);
+            idle_count++;  // ← INCREMENT idle counter
+            
+            // ← ADD THIS: Exit if too many consecutive idles
+            if (idle_count >= MAX_IDLE) {
+                log_info("Maximum idle iterations reached - stopping scheduler");
+                break;
+            }
         }
         
-        // Check if queue is empty and stop
-        if (is_queue_empty(scheduler_state.ready_queue) && 
-            scheduler_state.current_task == NULL) {
-            log_info("All tasks completed");
+        // ← ADD THIS: Exit if battery critical and no tasks
+        if (get_battery_level() <= BATTERY_CRITICAL && 
+            is_queue_empty(scheduler_state.ready_queue)) {
+            log_info("Battery critical and queue empty - stopping scheduler");
             break;
         }
     }
