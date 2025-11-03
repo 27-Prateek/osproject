@@ -9,8 +9,23 @@ Context Switches: 53
 Energy Consumed: 114 units
 CPU Utilization: 0.00%
 
+[RUN 2] FCFS SCHEDULING
+================================
+Final Battery Level: 0%
+Tasks Completed: 8
+Context Switches: 55
+Energy Consumed: 120 units
+CPU Utilization: 0.00%
 
-[RUN 2] STANDARD FCFS SCHEDULING
+[RUN 3] SJF SCHEDULING
+================================
+Final Battery Level: 0%
+Tasks Completed: 8
+Context Switches: 55
+Energy Consumed: 120 units
+CPU Utilization: 0.00%
+
+[RUN 4] ROUND ROBIN SCHEDULING
 ================================
 Final Battery Level: 0%
 Tasks Completed: 8
@@ -23,15 +38,18 @@ CPU Utilization: 0.00%
 COMPARISON SUMMARY
 ========================================
 
-BATTERY-AWARE SCHEDULING BENEFITS:
-Battery Saved: 0%
-Energy Saved: 6 units
-Efficiency Improvement: 0.00%
+Algorithm Comparison:
+---------------------
+BATTERY-AWARE: Battery=0%, Energy=114, Tasks=7, Switches=53
+FCFS: Battery=0%, Energy=120, Tasks=8, Switches=55
+SJF: Battery=0%, Energy=120, Tasks=8, Switches=55
+ROUND ROBIN: Battery=0%, Energy=120, Tasks=8, Switches=55
 
-Detailed Comparison:
-Final Battery (Aware): 0%, Standard: 0%
-Energy Consumed (Aware): 114, Standard: 120
-Tasks Completed (Aware): 7, Standard: 8
+Energy Savings vs FCFS:
+BATTERY-AWARE: 6 units saved (5.00%)
+SJF: 0 units saved (0.00%)
+ROUND ROBIN: 0 units saved (0.00%)
 
 CONCLUSION:
-ℹ Both schedulers used similar battery
+WINNER: BATTERY-AWARE (Most Energy-Efficient)
+Energy: 114 units | Tasks: 7

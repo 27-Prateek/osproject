@@ -130,7 +130,9 @@ void create_sample_tasks(void) {
 
 // Run comparison between battery-aware and standard scheduling
 void run_simulation(void) {
-    printf("\n=== COMPARISON: BATTERY-AWARE vs STANDARD SCHEDULING ===\n\n");
+    printf("\n========================================\n");
+    printf("COMPARISON: ALL SCHEDULING ALGORITHMS\n");
+    printf("========================================\n\n");
     
     FILE *comparison_file = fopen("output/comparison_results.txt", "w");
     if (!comparison_file) {
@@ -141,149 +143,149 @@ void run_simulation(void) {
     fprintf(comparison_file, "BATTERY-AWARE SCHEDULER - COMPARISON RESULTS\n");
     fprintf(comparison_file, "=============================================\n\n");
     
-    // ==================== RUN 1: BATTERY-AWARE ====================
-    printf("[RUN 1] Starting BATTERY-AWARE Scheduling...\n");
-    fprintf(comparison_file, "[RUN 1] BATTERY-AWARE SCHEDULING\n");
-    fprintf(comparison_file, "================================\n");
+    // Store results for all algorithms
+    typedef struct {
+        int final_battery;
+        int tasks_completed;
+        int context_switches;
+        long energy_consumed;
+        float cpu_utilization;
+    } AlgorithmResults;
     
-    // Reset and create tasks for first run
-    create_sample_tasks();
+    AlgorithmResults results[4];  // 4 algorithms
+    const char *algo_names[] = {
+        "BATTERY-AWARE",
+        "FCFS",
+        "SJF",
+        "ROUND ROBIN"
+    };
+    SchedulerAlgorithm algorithms[] = {
+        SCHEDULER_BATTERY_AWARE,
+        SCHEDULER_FCFS,
+        SCHEDULER_SJF,
+        SCHEDULER_ROUND_ROBIN
+    };
     
-    printf("--- Initial Status ---\n");
-    printf("\n=== Battery Status ===\n");
-    print_battery_status();
-    printf("=== Scheduler Status ===\n");
-    print_scheduler_status();
+    // Run all 4 algorithms
+    for (int i = 0; i < 4; i++) {
+        printf("\n[RUN %d] %s SCHEDULING\n", i+1, algo_names[i]);
+        printf("================================\n");
+        fprintf(comparison_file, "[RUN %d] %s SCHEDULING\n", i+1, algo_names[i]);
+        fprintf(comparison_file, "================================\n");
+        
+        // Initialize with current algorithm
+        if (i > 0) scheduler_cleanup();  // Clean up previous run
+        scheduler_init(algorithms[i]);
+        
+        // Create same tasks for fair comparison
+        create_sample_tasks();
+        
+        printf("--- Running Scheduler ---\n");
+        scheduler_start();
+        scheduler_run_loop();
+        scheduler_stop();
+        
+        // Collect results
+        results[i].final_battery = get_battery_level();
+        SchedulerStats *stats_ptr = get_scheduler_statistics();
+
+        results[i].tasks_completed = stats_ptr->tasks_completed;
+        results[i].context_switches = stats_ptr->context_switches;
+        results[i].energy_consumed = stats_ptr->total_energy_consumed;
+        results[i].cpu_utilization = stats_ptr->cpu_utilization;
+        
+        // Save to file
+        fprintf(comparison_file, "Final Battery Level: %d%%\n", results[i].final_battery);
+        fprintf(comparison_file, "Tasks Completed: %d\n", results[i].tasks_completed);
+        fprintf(comparison_file, "Context Switches: %d\n", results[i].context_switches);
+        fprintf(comparison_file, "Energy Consumed: %ld units\n", results[i].energy_consumed);
+        fprintf(comparison_file, "CPU Utilization: %.2f%%\n\n", results[i].cpu_utilization);
+        
+        printf("✓ %s completed\n", algo_names[i]);
+    }
     
-    // Run scheduler
-    printf("\n--- Running Scheduler ---\n");
-    scheduler_start();
-    scheduler_run_loop();
-    scheduler_stop();
-    
-    // Get results from battery-aware run
-    int battery_aware_final = get_battery_level();
-    SchedulerStats aware_stats = *get_scheduler_statistics();
-    
-    printf("\n--- Final Status ---\n");
-    print_battery_status();
-    print_scheduler_status();
-    print_task_statistics();
-    print_scheduler_statistics();
-    
-    // Save to file
-    fprintf(comparison_file, "Final Battery Level: %d%%\n", battery_aware_final);
-    fprintf(comparison_file, "Tasks Completed: %d\n", aware_stats.tasks_completed);
-    fprintf(comparison_file, "Context Switches: %d\n", aware_stats.context_switches);
-    fprintf(comparison_file, "Energy Consumed: %ld units\n", aware_stats.total_energy_consumed);
-    fprintf(comparison_file, "CPU Utilization: %.2f%%\n\n", aware_stats.cpu_utilization);
-    
-    // Clean up for next run
-    scheduler_cleanup();
-    
-    // ==================== RUN 2: STANDARD FCFS ====================
-    printf("\n\n[RUN 2] Starting STANDARD FCFS Scheduling...\n");
-    fprintf(comparison_file, "\n[RUN 2] STANDARD FCFS SCHEDULING\n");
-    fprintf(comparison_file, "================================\n");
-    
-    // Re-initialize with FCFS
-    scheduler_init(SCHEDULER_FCFS);
-    
-    // Create same tasks
-    create_sample_tasks();
-    
-    printf("--- Initial Status ---\n");
-    printf("\n=== Battery Status ===\n");
-    print_battery_status();
-    printf("=== Scheduler Status ===\n");
-    print_scheduler_status();
-    
-    // Run scheduler
-    printf("\n--- Running Scheduler ---\n");
-    scheduler_start();
-    scheduler_run_loop();
-    scheduler_stop();
-    
-    // Get results from standard run
-    int battery_fcfs_final = get_battery_level();
-    SchedulerStats fcfs_stats = *get_scheduler_statistics();
-    
-    printf("\n--- Final Status ---\n");
-    print_battery_status();
-    print_scheduler_status();
-    print_task_statistics();
-    print_scheduler_statistics();
-    
-    // Save to file
-    fprintf(comparison_file, "Final Battery Level: %d%%\n", battery_fcfs_final);
-    fprintf(comparison_file, "Tasks Completed: %d\n", fcfs_stats.tasks_completed);
-    fprintf(comparison_file, "Context Switches: %d\n", fcfs_stats.context_switches);
-    fprintf(comparison_file, "Energy Consumed: %ld units\n", fcfs_stats.total_energy_consumed);
-    fprintf(comparison_file, "CPU Utilization: %.2f%%\n\n", fcfs_stats.cpu_utilization);
-    
-    // ==================== COMPARISON RESULTS ====================
-    printf("\n\n========================================\n");
-    printf("COMPARISON RESULTS\n");
+    // ===== COMPARISON TABLE =====
+    printf("\n========================================\n");
+    printf("COMPARISON SUMMARY\n");
     printf("========================================\n\n");
     
     fprintf(comparison_file, "\n========================================\n");
     fprintf(comparison_file, "COMPARISON SUMMARY\n");
     fprintf(comparison_file, "========================================\n\n");
     
-    int battery_saved = battery_fcfs_final - battery_aware_final;
-    int energy_saved = fcfs_stats.total_energy_consumed - aware_stats.total_energy_consumed;
-    double efficiency = (battery_saved > 0) ? ((double)battery_saved / battery_fcfs_final) * 100 : 0.0;
+    // Table header
+    printf("┌────────────────────┬──────────┬──────┬─────┬──────────┐\n");
+    printf("│ Algorithm          │ Battery  │ Energy│ Tasks│ Switches │\n");
+    printf("├────────────────────┼──────────┼──────┼─────┼──────────┤\n");
     
-    printf(" METRICS:\n");
-    printf("   Battery-Aware Final: %d%%\n", battery_aware_final);
-    printf("   Standard FCFS Final: %d%%\n", battery_fcfs_final);
-    printf("   Battery Saved: %d%%\n\n", battery_saved);
-    printf("   Energy-Aware Consumed: %ld units\n", aware_stats.total_energy_consumed);
-    printf("   Standard FCFS Consumed: %ld units\n", fcfs_stats.total_energy_consumed);
-    printf("   Energy Saved: %d units (%.2f%% reduction)\n\n", energy_saved, efficiency);
+    fprintf(comparison_file, "Algorithm Comparison:\n");
+    fprintf(comparison_file, "---------------------\n");
     
-    fprintf(comparison_file, "BATTERY-AWARE SCHEDULING BENEFITS:\n");
-    fprintf(comparison_file, "Battery Saved: %d%%\n", battery_saved);
-    fprintf(comparison_file, "Energy Saved: %d units\n", energy_saved);
-    fprintf(comparison_file, "Efficiency Improvement: %.2f%%\n\n", efficiency);
-    
-    // Detailed comparison table
-    printf("┌─────────────────────────┬───────────────┬──────────────┐\n");
-    printf("│ Metric                  │ Battery-Aware │ Standard     │\n");
-    printf("├─────────────────────────┼───────────────┼──────────────┤\n");
-    printf("│ Final Battery           │ %d%%          │ %d%%        │\n", battery_aware_final, battery_fcfs_final);
-    printf("│ Energy Consumed         │ %ld        │ %ld       │\n", aware_stats.total_energy_consumed, fcfs_stats.total_energy_consumed);
-    printf("│ Tasks Completed         │ %d           │ %d           │\n", aware_stats.tasks_completed, fcfs_stats.tasks_completed);
-    printf("│ CPU Utilization         │ %.2f%%       │ %.2f%%      │\n", aware_stats.cpu_utilization, fcfs_stats.cpu_utilization);
-    printf("│ Context Switches        │ %d           │ %d           │\n", aware_stats.context_switches, fcfs_stats.context_switches);
-    printf("└─────────────────────────┴───────────────┴──────────────┘\n");
-    
-    fprintf(comparison_file, "Detailed Comparison:\n");
-    fprintf(comparison_file, "Final Battery (Aware): %d%%, Standard: %d%%\n", battery_aware_final, battery_fcfs_final);
-    fprintf(comparison_file, "Energy Consumed (Aware): %ld, Standard: %ld\n", aware_stats.total_energy_consumed, fcfs_stats.total_energy_consumed);
-    fprintf(comparison_file, "Tasks Completed (Aware): %d, Standard: %d\n", aware_stats.tasks_completed, fcfs_stats.tasks_completed);
-    
-    printf("\n CONCLUSION:\n");
-    if (battery_saved > 0) {
-        printf("    Battery-Aware Scheduler saved %d%% battery!\n", battery_saved);
-        printf("    Energy efficiency improved by %.2f%%\n", efficiency);
-    } else {
-        printf("   ℹ  Both schedulers used similar battery\n");
+    // Print each algorithm's results
+    for (int i = 0; i < 4; i++) {
+        printf("│ %-18s │ %3d%%     │ %4ld │ %3d │ %8d │\n",
+               algo_names[i],
+               results[i].final_battery,
+               results[i].energy_consumed,
+               results[i].tasks_completed,
+               results[i].context_switches);
+        
+        fprintf(comparison_file, "%s: Battery=%d%%, Energy=%ld, Tasks=%d, Switches=%d\n",
+                algo_names[i],
+                results[i].final_battery,
+                results[i].energy_consumed,
+                results[i].tasks_completed,
+                results[i].context_switches);
     }
     
+    printf("└────────────────────┴──────────┴──────┴─────┴──────────┘\n");
+    
+    // ===== ENERGY SAVINGS ANALYSIS =====
+    printf("\n--- Energy Savings vs FCFS ---\n");
+    fprintf(comparison_file, "\nEnergy Savings vs FCFS:\n");
+    
+    long fcfs_energy = results[1].energy_consumed;
+    
+    for (int i = 0; i < 4; i++) {
+        if (i == 1) continue;  // Skip FCFS itself
+        
+        long energy_saved = fcfs_energy - results[i].energy_consumed;
+        float savings_percent = (float)energy_saved / fcfs_energy * 100.0f;
+        
+        printf("%s: %ld units saved (%.2f%%)\n", 
+               algo_names[i], energy_saved, savings_percent);
+        
+        fprintf(comparison_file, "%s: %ld units saved (%.2f%%)\n",
+                algo_names[i], energy_saved, savings_percent);
+    }
+    
+    // ===== CONCLUSION =====
+    printf("\n--- CONCLUSION ---\n");
     fprintf(comparison_file, "\nCONCLUSION:\n");
-    if (battery_saved > 0) {
-        fprintf(comparison_file, " Battery-Aware Scheduler saved %d%% battery!\n", battery_saved);
-        fprintf(comparison_file, " Energy efficiency improved by %.2f%%\n", efficiency);
-    } else {
-        fprintf(comparison_file, "ℹ Both schedulers used similar battery\n");
+    
+    // Find best algorithm (lowest energy)
+    int best_idx = 0;
+    for (int i = 1; i < 4; i++) {
+        if (results[i].energy_consumed < results[best_idx].energy_consumed) {
+            best_idx = i;
+        }
     }
+    
+    printf(" %s is the most energy-efficient!\n", algo_names[best_idx]);
+    printf("   Energy: %ld units | Tasks: %d\n", 
+           results[best_idx].energy_consumed,
+           results[best_idx].tasks_completed);
+    
+    fprintf(comparison_file, "WINNER: %s (Most Energy-Efficient)\n", algo_names[best_idx]);
+    fprintf(comparison_file, "Energy: %ld units | Tasks: %d\n",
+            results[best_idx].energy_consumed,
+            results[best_idx].tasks_completed);
     
     fclose(comparison_file);
-    
-    printf("\n Results saved to: output/comparison_results.txt\n");
+    printf("\n✓ Results saved to output/comparison_results.txt\n");
     log_info("Simulation completed");
 }
+
 
 
 
