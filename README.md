@@ -33,6 +33,7 @@ This project implements a battery-aware scheduling algorithm that outperforms tr
   - Interactive Mode: Manual task creation and scheduler control
 
 ## Project Structure
+```bash
 osproject/
 ├── include/                 # Header files
 │   ├── scheduler.h         # Scheduler definitions and functions
@@ -59,7 +60,7 @@ osproject/
 │   ├── setup.sh        # Environment setup
 │   └── clean.sh        # Clean build artifacts
 └── Makefile            # Build configuration
-
+```
 
 ## Building the Project
 
