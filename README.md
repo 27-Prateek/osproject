@@ -1,3 +1,13 @@
+## Authors
+
+Developed as an Operating Systems course project.
+
+Group Members:
+202351106 - Nishit Prajapati
+202351109 -Prateek
+202351097 - Parth
+
+
 # Battery-Aware Task Scheduler
 
 A power-efficient operating system task scheduler that dynamically adjusts scheduling decisions based on battery levels to maximize system runtime while maintaining critical task execution.
@@ -244,14 +254,6 @@ Potential improvements: Integration with actual battery management systems, Dyna
 
 Runtime dependencies: Standard C library (libc), POSIX threads (pthread) - future support. No external libraries required.
 
-## Authors
-
-Developed as an Operating Systems course project.
-
-Group Members:
-202351106 - Nishit Prajapati
-202351109 -Prateek
-202351106 - Parth
 
 ## License
 
