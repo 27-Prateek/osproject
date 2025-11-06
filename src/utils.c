@@ -14,10 +14,7 @@ long get_current_time_ms(void) {
     return (time.tv_sec * 1000) + (time.tv_usec / 1000);
 }
 
-// Sleep for specified milliseconds
-void sleep_ms(int milliseconds) {
-    usleep(milliseconds * 1000);
-}
+
 
 // Global log file pointers
 static FILE *log_file = NULL;
@@ -26,16 +23,21 @@ static FILE *log_file = NULL;
 void init_logging(void) {
     log_file = fopen("logs/scheduler.log", "w");
     if (log_file) {
-        log_info("=== Logging initialized ===\n");
+        fprintf(log_file, "=== Logging initialized ===\n");
+        fflush(log_file);
+        printf("[LOGGING] Initialized: logs/scheduler.log\n");
+    } else {
+        printf("[ERROR] Cannot create logs/scheduler.log\n");
     }
 }
-
 // Close logging
 void close_logging(void) {
     if (log_file) {
-        log_info("=== Logging closed ===\n");
+        fprintf(log_file, "=== Logging closed ===\n");
+        fflush(log_file);
         fclose(log_file);
         log_file = NULL;
+        printf("[LOGGING] Closed\n");
     }
 }
 
@@ -50,14 +52,17 @@ void get_timestamp(char *buffer, size_t size) {
 
 // Generic log message with level
 void log_message(const char *level, const char *message) {
-    time_t now;
-    time(&now);
-    char time_str[26];
-    strncpy(time_str, ctime(&now), 26);
-    time_str[24] = '\0';  // Remove newline
+    char timestamp[100];
+    get_timestamp(timestamp, sizeof(timestamp));
     
-    printf("[%s] [%s] %s\n", time_str, level, message);
-    fflush(stdout);
+    // Print to CONSOLE
+    printf("%s [%s] %s\n", timestamp, level, message);
+    
+    // WRITE TO FILE
+    if (log_file) {
+        fprintf(log_file, "%s [%s] %s\n", timestamp, level, message);
+        fflush(log_file);
+    }
 }
 
 // Log error message
@@ -65,21 +70,22 @@ void log_error(const char *format, ...) {
     char timestamp[100];
     get_timestamp(timestamp, sizeof(timestamp));
     
-    // Print to console
-    printf("%s [ERROR] ", timestamp);
     va_list args;
+    
+    // Print to CONSOLE
+    printf("%s [ERROR] ", timestamp);
     va_start(args, format);
     vprintf(format, args);
     va_end(args);
     printf("\n");
-
-    // Write to log file
+    
+    // WRITE TO FILE
     if (log_file) {
         fprintf(log_file, "%s [ERROR] ", timestamp);
         va_start(args, format);
         vfprintf(log_file, format, args);
         va_end(args);
-        fprintf(log_file, "\n"); 
+        fprintf(log_file, "\n");
         fflush(log_file);
     }
 }
@@ -113,21 +119,22 @@ void log_debug(const char *format, ...) {
     char timestamp[100];
     get_timestamp(timestamp, sizeof(timestamp));
     
-    // Print to console
-    printf("%s [DEBUG] ", timestamp);
     va_list args;
+    
+    // Print to CONSOLE
+    printf("%s [DEBUG] ", timestamp);
     va_start(args, format);
     vprintf(format, args);
     va_end(args);
     printf("\n");
     
-    // Write to log file
+    // WRITE TO FILE
     if (log_file) {
         fprintf(log_file, "%s [DEBUG] ", timestamp);
         va_start(args, format);
         vfprintf(log_file, format, args);
         va_end(args);
-        fprintf(log_file, "\n"); 
+        fprintf(log_file, "\n");
         fflush(log_file);
     }
 }
@@ -198,4 +205,9 @@ void safe_free(void **ptr) {
         free(*ptr);
         *ptr = NULL;
     }
+}
+
+// Sleep for specified milliseconds
+void sleep_ms(int milliseconds) {
+    usleep(milliseconds * 1000);
 }

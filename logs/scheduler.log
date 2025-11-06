@@ -1,1309 +1,1308 @@
-[Mon Nov 03 08:11:23 2025] [INFO] === Logging initialized ===
-
-[Mon Nov 03 08:11:23 2025] [INFO] Battery monitor initialized successfully
-[Mon Nov 03 08:11:23 2025] [INFO] Task manager initialized successfully
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduler initialized successfully
-[Mon Nov 03 08:11:23 2025] [INFO] Battery-Aware Scheduler System Started
-[Mon Nov 03 08:11:23 2025] [INFO] Creating sample tasks...
-[Mon Nov 03 08:11:23 2025] [INFO] Task created: ID=1, Name=System Monitor, Priority=1, Energy=1
-[Mon Nov 03 08:11:23 2025] [INFO] Task admitted: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:23 2025] [INFO] Task created: ID=2, Name=File Sync, Priority=1, Energy=2
-[Mon Nov 03 08:11:23 2025] [INFO] Task admitted: ID=2, Name=File Sync
-[Mon Nov 03 08:11:23 2025] [INFO] Task created: ID=3, Name=Log Writer, Priority=2, Energy=1
-[Mon Nov 03 08:11:23 2025] [INFO] Task admitted: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:23 2025] [INFO] Task created: ID=4, Name=Video Processing, Priority=3, Energy=3
-[Mon Nov 03 08:11:23 2025] [INFO] Task admitted: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:23 2025] [INFO] Task created: ID=5, Name=Network Sync, Priority=2, Energy=2
-[Mon Nov 03 08:11:23 2025] [INFO] Task admitted: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:23 2025] [INFO] Task created: ID=6, Name=Emergency Backup, Priority=1, Energy=3
-[Mon Nov 03 08:11:23 2025] [INFO] Task admitted: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:23 2025] [INFO] Task created: ID=7, Name=Cache Cleanup, Priority=3, Energy=1
-[Mon Nov 03 08:11:23 2025] [INFO] Task admitted: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:23 2025] [INFO] Task created: ID=8, Name=Data Analysis, Priority=2, Energy=2
-[Mon Nov 03 08:11:23 2025] [INFO] Task admitted: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:23 2025] [INFO] Sample tasks created successfully
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduler started
-[Mon Nov 03 08:11:23 2025] [INFO] Entering scheduler main loop
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery-aware scheduling: Battery=100%, Mode=0
-[Mon Nov 03 08:11:23 2025] [DEBUG] Context switch: Old=0, New=1
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:23 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery drained by 1%.0 Current level: 99%
-[Mon Nov 03 08:11:23 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery-aware scheduling: Battery=99%, Mode=0
-[Mon Nov 03 08:11:23 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:23 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery drained by 2%.0 Current level: 97%
-[Mon Nov 03 08:11:23 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery-aware scheduling: Battery=97%, Mode=0
-[Mon Nov 03 08:11:23 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:23 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery drained by 1%.0 Current level: 96%
-[Mon Nov 03 08:11:23 2025] [INFO] Task preempted: ID=3
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery-aware scheduling: Battery=96%, Mode=0
-[Mon Nov 03 08:11:23 2025] [DEBUG] Context switch: Old=3, New=4
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:23 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery drained by 3%.0 Current level: 93%
-[Mon Nov 03 08:11:23 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery-aware scheduling: Battery=93%, Mode=0
-[Mon Nov 03 08:11:23 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:23 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery drained by 2%.0 Current level: 91%
-[Mon Nov 03 08:11:23 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery-aware scheduling: Battery=91%, Mode=0
-[Mon Nov 03 08:11:23 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:23 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery drained by 3%.0 Current level: 88%
-[Mon Nov 03 08:11:23 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery-aware scheduling: Battery=88%, Mode=0
-[Mon Nov 03 08:11:23 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:23 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery drained by 1%.0 Current level: 87%
-[Mon Nov 03 08:11:23 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery-aware scheduling: Battery=87%, Mode=0
-[Mon Nov 03 08:11:23 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:23 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery drained by 2%.0 Current level: 85%
-[Mon Nov 03 08:11:23 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:23 2025] [DEBUG] Battery-aware scheduling: Battery=85%, Mode=0
-[Mon Nov 03 08:11:23 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:23 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:23 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 1%.0 Current level: 84%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=84%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 2%.0 Current level: 82%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=82%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 1%.0 Current level: 81%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=3
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=81%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=3, New=4
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 3%.0 Current level: 78%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=78%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 2%.0 Current level: 76%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=76%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 3%.0 Current level: 73%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=73%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 1%.0 Current level: 72%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=72%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 2%.0 Current level: 70%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=70%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 1%.0 Current level: 69%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=69%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery drained by 2%.0 Current level: 67%
-[Mon Nov 03 08:11:24 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:24 2025] [DEBUG] Battery-aware scheduling: Battery=67%, Mode=0
-[Mon Nov 03 08:11:24 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:24 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:24 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 1%.0 Current level: 66%
-[Mon Nov 03 08:11:25 2025] [INFO] Task completed: ID=3
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=66%, Mode=0
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 3%.0 Current level: 63%
-[Mon Nov 03 08:11:25 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=63%, Mode=0
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 2%.0 Current level: 61%
-[Mon Nov 03 08:11:25 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=61%, Mode=0
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 3%.0 Current level: 58%
-[Mon Nov 03 08:11:25 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=58%, Mode=0
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 1%.0 Current level: 57%
-[Mon Nov 03 08:11:25 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=57%, Mode=0
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 2%.0 Current level: 55%
-[Mon Nov 03 08:11:25 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=55%, Mode=0
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 1%.0 Current level: 54%
-[Mon Nov 03 08:11:25 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=54%, Mode=0
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 2%.0 Current level: 52%
-[Mon Nov 03 08:11:25 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=52%, Mode=0
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 3%.0 Current level: 49%
-[Mon Nov 03 08:11:25 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduler mode changed to: 1
-[Mon Nov 03 08:11:25 2025] [INFO] BALANCED mode: Balancing performance and energy
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=49%, Mode=1
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery drained by 2%.0 Current level: 47%
-[Mon Nov 03 08:11:25 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:25 2025] [DEBUG] Battery-aware scheduling: Battery=47%, Mode=1
-[Mon Nov 03 08:11:25 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:25 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:25 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 3%.0 Current level: 44%
-[Mon Nov 03 08:11:26 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=44%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 1%.0 Current level: 43%
-[Mon Nov 03 08:11:26 2025] [INFO] Task completed: ID=7
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=43%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=0, New=8
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 2%.0 Current level: 41%
-[Mon Nov 03 08:11:26 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=41%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 1%.0 Current level: 40%
-[Mon Nov 03 08:11:26 2025] [INFO] Task completed: ID=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=40%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=0, New=2
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 2%.0 Current level: 38%
-[Mon Nov 03 08:11:26 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=38%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 3%.0 Current level: 35%
-[Mon Nov 03 08:11:26 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=35%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 2%.0 Current level: 33%
-[Mon Nov 03 08:11:26 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=33%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 3%.0 Current level: 30%
-[Mon Nov 03 08:11:26 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=30%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 2%.0 Current level: 28%
-[Mon Nov 03 08:11:26 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=28%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=8, New=2
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery drained by 2%.0 Current level: 26%
-[Mon Nov 03 08:11:26 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:26 2025] [DEBUG] Battery-aware scheduling: Battery=26%, Mode=1
-[Mon Nov 03 08:11:26 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:26 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:26 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 3%.0 Current level: 23%
-[Mon Nov 03 08:11:27 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduler mode changed to: 2
-[Mon Nov 03 08:11:27 2025] [INFO] POWER_SAVE mode: Prioritizing low-energy tasks
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=23%, Mode=2
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 2%.0 Current level: 21%
-[Mon Nov 03 08:11:27 2025] [INFO] Task completed: ID=5
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=21%, Mode=2
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=0, New=6
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 3%.0 Current level: 18%
-[Mon Nov 03 08:11:27 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=18%, Mode=2
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 2%.0 Current level: 16%
-[Mon Nov 03 08:11:27 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=16%, Mode=2
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=8, New=2
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 2%.0 Current level: 14%
-[Mon Nov 03 08:11:27 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=14%, Mode=2
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 3%.0 Current level: 11%
-[Mon Nov 03 08:11:27 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=11%, Mode=2
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 3%.0 Current level: 8%
-[Mon Nov 03 08:11:27 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduler mode changed to: 3
-[Mon Nov 03 08:11:27 2025] [INFO] CRITICAL mode: Only critical tasks allowed
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=8%, Mode=3
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 2%.0 Current level: 6%
-[Mon Nov 03 08:11:27 2025] [INFO] Task completed: ID=8
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=6%, Mode=3
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=0, New=2
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 2%.0 Current level: 4%
-[Mon Nov 03 08:11:27 2025] [INFO] Task completed: ID=2
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=4%, Mode=3
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery drained by 3%.0 Current level: 1%
-[Mon Nov 03 08:11:27 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:27 2025] [DEBUG] Battery-aware scheduling: Battery=1%, Mode=3
-[Mon Nov 03 08:11:27 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:27 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:27 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:28 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] Context switch: Old=6, New=4
-[Mon Nov 03 08:11:28 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:28 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:28 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:28 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:28 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:28 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] Context switch: Old=6, New=4
-[Mon Nov 03 08:11:28 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:28 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:28 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:28 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:28 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:28 2025] [INFO] Task completed: ID=6
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:28 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:28 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:29 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:29 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:29 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:29 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:29 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:29 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:29 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
-[Mon Nov 03 08:11:29 2025] [DEBUG] No tasks in ready queue, idling...
-[Mon Nov 03 08:11:29 2025] [INFO] Maximum idle iterations reached - stopping scheduler
-[Mon Nov 03 08:11:29 2025] [INFO] Exiting scheduler main loop
-[Mon Nov 03 08:11:29 2025] [INFO] Scheduler stopped
-[Mon Nov 03 08:11:29 2025] [INFO] Task manager cleaned up
-[Mon Nov 03 08:11:29 2025] [INFO] Battery monitor cleaned up
-[Mon Nov 03 08:11:29 2025] [INFO] Scheduler cleaned up
-[Mon Nov 03 08:11:29 2025] [INFO] Battery monitor initialized successfully
-[Mon Nov 03 08:11:29 2025] [INFO] Task manager initialized successfully
-[Mon Nov 03 08:11:29 2025] [INFO] Scheduler initialized successfully
-[Mon Nov 03 08:11:29 2025] [INFO] Creating sample tasks...
-[Mon Nov 03 08:11:29 2025] [INFO] Task created: ID=1, Name=System Monitor, Priority=1, Energy=1
-[Mon Nov 03 08:11:29 2025] [INFO] Task admitted: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:29 2025] [INFO] Task created: ID=2, Name=File Sync, Priority=1, Energy=2
-[Mon Nov 03 08:11:29 2025] [INFO] Task admitted: ID=2, Name=File Sync
-[Mon Nov 03 08:11:29 2025] [INFO] Task created: ID=3, Name=Log Writer, Priority=2, Energy=1
-[Mon Nov 03 08:11:29 2025] [INFO] Task admitted: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:29 2025] [INFO] Task created: ID=4, Name=Video Processing, Priority=3, Energy=3
-[Mon Nov 03 08:11:29 2025] [INFO] Task admitted: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:29 2025] [INFO] Task created: ID=5, Name=Network Sync, Priority=2, Energy=2
-[Mon Nov 03 08:11:29 2025] [INFO] Task admitted: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:29 2025] [INFO] Task created: ID=6, Name=Emergency Backup, Priority=1, Energy=3
-[Mon Nov 03 08:11:29 2025] [INFO] Task admitted: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:29 2025] [INFO] Task created: ID=7, Name=Cache Cleanup, Priority=3, Energy=1
-[Mon Nov 03 08:11:29 2025] [INFO] Task admitted: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:29 2025] [INFO] Task created: ID=8, Name=Data Analysis, Priority=2, Energy=2
-[Mon Nov 03 08:11:29 2025] [INFO] Task admitted: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:29 2025] [INFO] Sample tasks created successfully
-[Mon Nov 03 08:11:29 2025] [INFO] Scheduler started
-[Mon Nov 03 08:11:29 2025] [INFO] Entering scheduler main loop
-[Mon Nov 03 08:11:29 2025] [DEBUG] Context switch: Old=0, New=1
-[Mon Nov 03 08:11:29 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:29 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:29 2025] [DEBUG] Battery drained by 1%.0 Current level: 99%
-[Mon Nov 03 08:11:29 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:29 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:29 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:29 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:29 2025] [DEBUG] Battery drained by 2%.0 Current level: 97%
-[Mon Nov 03 08:11:29 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:29 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:29 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:29 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:29 2025] [DEBUG] Battery drained by 1%.0 Current level: 96%
-[Mon Nov 03 08:11:29 2025] [INFO] Task preempted: ID=3
-[Mon Nov 03 08:11:29 2025] [DEBUG] Context switch: Old=3, New=4
-[Mon Nov 03 08:11:29 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:29 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:29 2025] [DEBUG] Battery drained by 3%.0 Current level: 93%
-[Mon Nov 03 08:11:29 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:29 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:29 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:29 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 2%.0 Current level: 91%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 3%.0 Current level: 88%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 1%.0 Current level: 87%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 2%.0 Current level: 85%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 1%.0 Current level: 84%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 2%.0 Current level: 82%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 1%.0 Current level: 81%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=3
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=3, New=4
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 3%.0 Current level: 78%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 2%.0 Current level: 76%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:30 2025] [DEBUG] Battery drained by 3%.0 Current level: 73%
-[Mon Nov 03 08:11:30 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:30 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:30 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:30 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 1%.0 Current level: 72%
-[Mon Nov 03 08:11:31 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 2%.0 Current level: 70%
-[Mon Nov 03 08:11:31 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 1%.0 Current level: 69%
-[Mon Nov 03 08:11:31 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 2%.0 Current level: 67%
-[Mon Nov 03 08:11:31 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 1%.0 Current level: 66%
-[Mon Nov 03 08:11:31 2025] [INFO] Task completed: ID=3
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 3%.0 Current level: 63%
-[Mon Nov 03 08:11:31 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 2%.0 Current level: 61%
-[Mon Nov 03 08:11:31 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 3%.0 Current level: 58%
-[Mon Nov 03 08:11:31 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 1%.0 Current level: 57%
-[Mon Nov 03 08:11:31 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:31 2025] [DEBUG] Battery drained by 2%.0 Current level: 55%
-[Mon Nov 03 08:11:31 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:31 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:31 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:31 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 1%.0 Current level: 54%
-[Mon Nov 03 08:11:32 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 2%.0 Current level: 52%
-[Mon Nov 03 08:11:32 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 3%.0 Current level: 49%
-[Mon Nov 03 08:11:32 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduler mode changed to: 1
-[Mon Nov 03 08:11:32 2025] [INFO] BALANCED mode: Balancing performance and energy
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 2%.0 Current level: 47%
-[Mon Nov 03 08:11:32 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 3%.0 Current level: 44%
-[Mon Nov 03 08:11:32 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 1%.0 Current level: 43%
-[Mon Nov 03 08:11:32 2025] [INFO] Task completed: ID=7
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=0, New=8
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 2%.0 Current level: 41%
-[Mon Nov 03 08:11:32 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 1%.0 Current level: 40%
-[Mon Nov 03 08:11:32 2025] [INFO] Task completed: ID=1
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=0, New=2
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 2%.0 Current level: 38%
-[Mon Nov 03 08:11:32 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:32 2025] [DEBUG] Battery drained by 3%.0 Current level: 35%
-[Mon Nov 03 08:11:32 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:32 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:32 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:32 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 2%.0 Current level: 33%
-[Mon Nov 03 08:11:33 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 3%.0 Current level: 30%
-[Mon Nov 03 08:11:33 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 2%.0 Current level: 28%
-[Mon Nov 03 08:11:33 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=8, New=2
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 2%.0 Current level: 26%
-[Mon Nov 03 08:11:33 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 3%.0 Current level: 23%
-[Mon Nov 03 08:11:33 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduler mode changed to: 2
-[Mon Nov 03 08:11:33 2025] [INFO] POWER_SAVE mode: Prioritizing low-energy tasks
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 2%.0 Current level: 21%
-[Mon Nov 03 08:11:33 2025] [INFO] Task completed: ID=5
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=0, New=6
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 3%.0 Current level: 18%
-[Mon Nov 03 08:11:33 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 2%.0 Current level: 16%
-[Mon Nov 03 08:11:33 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=8, New=2
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 2%.0 Current level: 14%
-[Mon Nov 03 08:11:33 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:33 2025] [DEBUG] Battery drained by 3%.0 Current level: 11%
-[Mon Nov 03 08:11:33 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:33 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:33 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:33 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 3%.0 Current level: 8%
-[Mon Nov 03 08:11:34 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduler mode changed to: 3
-[Mon Nov 03 08:11:34 2025] [INFO] CRITICAL mode: Only critical tasks allowed
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 2%.0 Current level: 6%
-[Mon Nov 03 08:11:34 2025] [INFO] Task completed: ID=8
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=0, New=2
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 2%.0 Current level: 4%
-[Mon Nov 03 08:11:34 2025] [INFO] Task completed: ID=2
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 3%.0 Current level: 1%
-[Mon Nov 03 08:11:34 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:34 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=6, New=4
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:34 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:34 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=6, New=4
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:34 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:34 2025] [INFO] Task completed: ID=6
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:34 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:34 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:34 2025] [DEBUG] Context switch: Old=4, New=4
-[Mon Nov 03 08:11:34 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:34 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:35 2025] [INFO] Task completed: ID=4
-[Mon Nov 03 08:11:35 2025] [INFO] Battery critical and queue empty - stopping scheduler
-[Mon Nov 03 08:11:35 2025] [INFO] Exiting scheduler main loop
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduler stopped
-[Mon Nov 03 08:11:35 2025] [INFO] Task manager cleaned up
-[Mon Nov 03 08:11:35 2025] [INFO] Battery monitor cleaned up
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduler cleaned up
-[Mon Nov 03 08:11:35 2025] [INFO] Battery monitor initialized successfully
-[Mon Nov 03 08:11:35 2025] [INFO] Task manager initialized successfully
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduler initialized successfully
-[Mon Nov 03 08:11:35 2025] [INFO] Creating sample tasks...
-[Mon Nov 03 08:11:35 2025] [INFO] Task created: ID=1, Name=System Monitor, Priority=1, Energy=1
-[Mon Nov 03 08:11:35 2025] [INFO] Task admitted: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:35 2025] [INFO] Task created: ID=2, Name=File Sync, Priority=1, Energy=2
-[Mon Nov 03 08:11:35 2025] [INFO] Task admitted: ID=2, Name=File Sync
-[Mon Nov 03 08:11:35 2025] [INFO] Task created: ID=3, Name=Log Writer, Priority=2, Energy=1
-[Mon Nov 03 08:11:35 2025] [INFO] Task admitted: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:35 2025] [INFO] Task created: ID=4, Name=Video Processing, Priority=3, Energy=3
-[Mon Nov 03 08:11:35 2025] [INFO] Task admitted: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:35 2025] [INFO] Task created: ID=5, Name=Network Sync, Priority=2, Energy=2
-[Mon Nov 03 08:11:35 2025] [INFO] Task admitted: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:35 2025] [INFO] Task created: ID=6, Name=Emergency Backup, Priority=1, Energy=3
-[Mon Nov 03 08:11:35 2025] [INFO] Task admitted: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:35 2025] [INFO] Task created: ID=7, Name=Cache Cleanup, Priority=3, Energy=1
-[Mon Nov 03 08:11:35 2025] [INFO] Task admitted: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:35 2025] [INFO] Task created: ID=8, Name=Data Analysis, Priority=2, Energy=2
-[Mon Nov 03 08:11:35 2025] [INFO] Task admitted: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:35 2025] [INFO] Sample tasks created successfully
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduler started
-[Mon Nov 03 08:11:35 2025] [INFO] Entering scheduler main loop
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=0, New=1
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 1%.0 Current level: 99%
-[Mon Nov 03 08:11:35 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 2%.0 Current level: 97%
-[Mon Nov 03 08:11:35 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 1%.0 Current level: 96%
-[Mon Nov 03 08:11:35 2025] [INFO] Task preempted: ID=3
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=3, New=4
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 3%.0 Current level: 93%
-[Mon Nov 03 08:11:35 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 2%.0 Current level: 91%
-[Mon Nov 03 08:11:35 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 3%.0 Current level: 88%
-[Mon Nov 03 08:11:35 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 1%.0 Current level: 87%
-[Mon Nov 03 08:11:35 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 2%.0 Current level: 85%
-[Mon Nov 03 08:11:35 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:35 2025] [DEBUG] Battery drained by 1%.0 Current level: 84%
-[Mon Nov 03 08:11:35 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:35 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:35 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:35 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 2%.0 Current level: 82%
-[Mon Nov 03 08:11:36 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 1%.0 Current level: 81%
-[Mon Nov 03 08:11:36 2025] [INFO] Task preempted: ID=3
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=3, New=4
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 3%.0 Current level: 78%
-[Mon Nov 03 08:11:36 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 2%.0 Current level: 76%
-[Mon Nov 03 08:11:36 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 3%.0 Current level: 73%
-[Mon Nov 03 08:11:36 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 1%.0 Current level: 72%
-[Mon Nov 03 08:11:36 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 2%.0 Current level: 70%
-[Mon Nov 03 08:11:36 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 1%.0 Current level: 69%
-[Mon Nov 03 08:11:36 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 2%.0 Current level: 67%
-[Mon Nov 03 08:11:36 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:36 2025] [DEBUG] Battery drained by 1%.0 Current level: 66%
-[Mon Nov 03 08:11:36 2025] [INFO] Task completed: ID=3
-[Mon Nov 03 08:11:36 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:36 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:36 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 3%.0 Current level: 63%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 2%.0 Current level: 61%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 3%.0 Current level: 58%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 1%.0 Current level: 57%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 2%.0 Current level: 55%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 1%.0 Current level: 54%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 2%.0 Current level: 52%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 3%.0 Current level: 49%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduler mode changed to: 1
-[Mon Nov 03 08:11:37 2025] [INFO] BALANCED mode: Balancing performance and energy
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 2%.0 Current level: 47%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:37 2025] [DEBUG] Battery drained by 3%.0 Current level: 44%
-[Mon Nov 03 08:11:37 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:37 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:37 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:37 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 1%.0 Current level: 43%
-[Mon Nov 03 08:11:38 2025] [INFO] Task completed: ID=7
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=0, New=8
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 2%.0 Current level: 41%
-[Mon Nov 03 08:11:38 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 1%.0 Current level: 40%
-[Mon Nov 03 08:11:38 2025] [INFO] Task completed: ID=1
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=0, New=2
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 2%.0 Current level: 38%
-[Mon Nov 03 08:11:38 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 3%.0 Current level: 35%
-[Mon Nov 03 08:11:38 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 2%.0 Current level: 33%
-[Mon Nov 03 08:11:38 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 3%.0 Current level: 30%
-[Mon Nov 03 08:11:38 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 2%.0 Current level: 28%
-[Mon Nov 03 08:11:38 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=8, New=2
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 2%.0 Current level: 26%
-[Mon Nov 03 08:11:38 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:38 2025] [DEBUG] Battery drained by 3%.0 Current level: 23%
-[Mon Nov 03 08:11:38 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduler mode changed to: 2
-[Mon Nov 03 08:11:38 2025] [INFO] POWER_SAVE mode: Prioritizing low-energy tasks
-[Mon Nov 03 08:11:38 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:38 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:38 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 2%.0 Current level: 21%
-[Mon Nov 03 08:11:39 2025] [INFO] Task completed: ID=5
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=0, New=6
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 3%.0 Current level: 18%
-[Mon Nov 03 08:11:39 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 2%.0 Current level: 16%
-[Mon Nov 03 08:11:39 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=8, New=2
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 2%.0 Current level: 14%
-[Mon Nov 03 08:11:39 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 3%.0 Current level: 11%
-[Mon Nov 03 08:11:39 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 3%.0 Current level: 8%
-[Mon Nov 03 08:11:39 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduler mode changed to: 3
-[Mon Nov 03 08:11:39 2025] [INFO] CRITICAL mode: Only critical tasks allowed
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 2%.0 Current level: 6%
-[Mon Nov 03 08:11:39 2025] [INFO] Task completed: ID=8
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=0, New=2
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 2%.0 Current level: 4%
-[Mon Nov 03 08:11:39 2025] [INFO] Task completed: ID=2
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 3%.0 Current level: 1%
-[Mon Nov 03 08:11:39 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:39 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:39 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:39 2025] [DEBUG] Context switch: Old=6, New=4
-[Mon Nov 03 08:11:39 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:39 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:40 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:40 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=6, New=4
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:40 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:40 2025] [INFO] Task completed: ID=6
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:40 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=4, New=4
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:40 2025] [INFO] Task completed: ID=4
-[Mon Nov 03 08:11:40 2025] [INFO] Battery critical and queue empty - stopping scheduler
-[Mon Nov 03 08:11:40 2025] [INFO] Exiting scheduler main loop
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduler stopped
-[Mon Nov 03 08:11:40 2025] [INFO] Task manager cleaned up
-[Mon Nov 03 08:11:40 2025] [INFO] Battery monitor cleaned up
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduler cleaned up
-[Mon Nov 03 08:11:40 2025] [INFO] Battery monitor initialized successfully
-[Mon Nov 03 08:11:40 2025] [INFO] Task manager initialized successfully
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduler initialized successfully
-[Mon Nov 03 08:11:40 2025] [INFO] Creating sample tasks...
-[Mon Nov 03 08:11:40 2025] [INFO] Task created: ID=1, Name=System Monitor, Priority=1, Energy=1
-[Mon Nov 03 08:11:40 2025] [INFO] Task admitted: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:40 2025] [INFO] Task created: ID=2, Name=File Sync, Priority=1, Energy=2
-[Mon Nov 03 08:11:40 2025] [INFO] Task admitted: ID=2, Name=File Sync
-[Mon Nov 03 08:11:40 2025] [INFO] Task created: ID=3, Name=Log Writer, Priority=2, Energy=1
-[Mon Nov 03 08:11:40 2025] [INFO] Task admitted: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:40 2025] [INFO] Task created: ID=4, Name=Video Processing, Priority=3, Energy=3
-[Mon Nov 03 08:11:40 2025] [INFO] Task admitted: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:40 2025] [INFO] Task created: ID=5, Name=Network Sync, Priority=2, Energy=2
-[Mon Nov 03 08:11:40 2025] [INFO] Task admitted: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:40 2025] [INFO] Task created: ID=6, Name=Emergency Backup, Priority=1, Energy=3
-[Mon Nov 03 08:11:40 2025] [INFO] Task admitted: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:40 2025] [INFO] Task created: ID=7, Name=Cache Cleanup, Priority=3, Energy=1
-[Mon Nov 03 08:11:40 2025] [INFO] Task admitted: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:40 2025] [INFO] Task created: ID=8, Name=Data Analysis, Priority=2, Energy=2
-[Mon Nov 03 08:11:40 2025] [INFO] Task admitted: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:40 2025] [INFO] Sample tasks created successfully
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduler started
-[Mon Nov 03 08:11:40 2025] [INFO] Entering scheduler main loop
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=0, New=1
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 1%.0 Current level: 99%
-[Mon Nov 03 08:11:40 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 2%.0 Current level: 97%
-[Mon Nov 03 08:11:40 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 1%.0 Current level: 96%
-[Mon Nov 03 08:11:40 2025] [INFO] Task preempted: ID=3
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=3, New=4
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 93%
-[Mon Nov 03 08:11:40 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:40 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:40 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:40 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 2%.0 Current level: 91%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 3%.0 Current level: 88%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 1%.0 Current level: 87%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 2%.0 Current level: 85%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 1%.0 Current level: 84%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 2%.0 Current level: 82%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 1%.0 Current level: 81%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=3
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=3, New=4
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 3%.0 Current level: 78%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 2%.0 Current level: 76%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:41 2025] [DEBUG] Battery drained by 3%.0 Current level: 73%
-[Mon Nov 03 08:11:41 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:41 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:41 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:41 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 1%.0 Current level: 72%
-[Mon Nov 03 08:11:42 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 70%
-[Mon Nov 03 08:11:42 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 1%.0 Current level: 69%
-[Mon Nov 03 08:11:42 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 67%
-[Mon Nov 03 08:11:42 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=2, New=3
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=3 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 1%.0 Current level: 66%
-[Mon Nov 03 08:11:42 2025] [INFO] Task completed: ID=3
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 3%.0 Current level: 63%
-[Mon Nov 03 08:11:42 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 61%
-[Mon Nov 03 08:11:42 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 3%.0 Current level: 58%
-[Mon Nov 03 08:11:42 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 1%.0 Current level: 57%
-[Mon Nov 03 08:11:42 2025] [INFO] Task preempted: ID=7
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=7, New=8
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 55%
-[Mon Nov 03 08:11:42 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:42 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:42 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:42 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 1%.0 Current level: 54%
-[Mon Nov 03 08:11:43 2025] [INFO] Task preempted: ID=1
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=1, New=2
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 2%.0 Current level: 52%
-[Mon Nov 03 08:11:43 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 3%.0 Current level: 49%
-[Mon Nov 03 08:11:43 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduler mode changed to: 1
-[Mon Nov 03 08:11:43 2025] [INFO] BALANCED mode: Balancing performance and energy
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 2%.0 Current level: 47%
-[Mon Nov 03 08:11:43 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 3%.0 Current level: 44%
-[Mon Nov 03 08:11:43 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=6, New=7
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=7 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 1%.0 Current level: 43%
-[Mon Nov 03 08:11:43 2025] [INFO] Task completed: ID=7
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=0, New=8
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 2%.0 Current level: 41%
-[Mon Nov 03 08:11:43 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=8, New=1
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=1 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 1%.0 Current level: 40%
-[Mon Nov 03 08:11:43 2025] [INFO] Task completed: ID=1
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=0, New=2
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 2%.0 Current level: 38%
-[Mon Nov 03 08:11:43 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:43 2025] [DEBUG] Battery drained by 3%.0 Current level: 35%
-[Mon Nov 03 08:11:43 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:43 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:43 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:43 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 2%.0 Current level: 33%
-[Mon Nov 03 08:11:44 2025] [INFO] Task preempted: ID=5
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=5, New=6
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 3%.0 Current level: 30%
-[Mon Nov 03 08:11:44 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 2%.0 Current level: 28%
-[Mon Nov 03 08:11:44 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=8, New=2
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 2%.0 Current level: 26%
-[Mon Nov 03 08:11:44 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 3%.0 Current level: 23%
-[Mon Nov 03 08:11:44 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduler mode changed to: 2
-[Mon Nov 03 08:11:44 2025] [INFO] POWER_SAVE mode: Prioritizing low-energy tasks
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=4, New=5
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=5 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 2%.0 Current level: 21%
-[Mon Nov 03 08:11:44 2025] [INFO] Task completed: ID=5
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=0, New=6
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 3%.0 Current level: 18%
-[Mon Nov 03 08:11:44 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 2%.0 Current level: 16%
-[Mon Nov 03 08:11:44 2025] [INFO] Task preempted: ID=8
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=8, New=2
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 2%.0 Current level: 14%
-[Mon Nov 03 08:11:44 2025] [INFO] Task preempted: ID=2
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=2, New=4
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:44 2025] [DEBUG] Battery drained by 3%.0 Current level: 11%
-[Mon Nov 03 08:11:44 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:44 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:44 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:44 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 8%
-[Mon Nov 03 08:11:45 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduler mode changed to: 3
-[Mon Nov 03 08:11:45 2025] [INFO] CRITICAL mode: Only critical tasks allowed
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=6, New=8
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=8 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 2%.0 Current level: 6%
-[Mon Nov 03 08:11:45 2025] [INFO] Task completed: ID=8
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=0, New=2
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=2, Name=File Sync
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=2 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 2%.0 Current level: 4%
-[Mon Nov 03 08:11:45 2025] [INFO] Task completed: ID=2
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 1%
-[Mon Nov 03 08:11:45 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:45 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=6, New=4
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:45 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:45 2025] [INFO] Task preempted: ID=6
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=6, New=4
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:45 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=4, New=6
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=6 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:45 2025] [INFO] Task completed: ID=6
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=0, New=4
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:45 2025] [INFO] Task preempted: ID=4
-[Mon Nov 03 08:11:45 2025] [DEBUG] Context switch: Old=4, New=4
-[Mon Nov 03 08:11:45 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
-[Mon Nov 03 08:11:45 2025] [INFO] Executing task: ID=4 for 100 ms
-[Mon Nov 03 08:11:46 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
-[Mon Nov 03 08:11:46 2025] [INFO] Task completed: ID=4
-[Mon Nov 03 08:11:46 2025] [INFO] Battery critical and queue empty - stopping scheduler
-[Mon Nov 03 08:11:46 2025] [INFO] Exiting scheduler main loop
-[Mon Nov 03 08:11:46 2025] [INFO] Scheduler stopped
-[Mon Nov 03 08:11:46 2025] [INFO] Simulation completed
-[Mon Nov 03 08:11:46 2025] [INFO] Task manager cleaned up
-[Mon Nov 03 08:11:46 2025] [INFO] Battery monitor cleaned up
-[Mon Nov 03 08:11:46 2025] [INFO] Scheduler cleaned up
-[Mon Nov 03 08:11:46 2025] [INFO] === Logging closed ===
-
+=== Logging initialized ===
+[Thu Nov 06 14:09:38 2025] [INFO] Battery monitor initialized successfully
+[Thu Nov 06 14:09:38 2025] [INFO] Task manager initialized successfully
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduler initialized successfully
+[Thu Nov 06 14:09:38 2025] [INFO] Battery-Aware Scheduler System Started
+[Thu Nov 06 14:09:38 2025] [ERROR] Scheduler already initialized
+[Thu Nov 06 14:09:38 2025] [INFO] Creating sample tasks...
+[Thu Nov 06 14:09:38 2025] [INFO] Task created: ID=1, Name=System Monitor, Priority=1, Energy=1
+[Thu Nov 06 14:09:38 2025] [INFO] Task admitted: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:38 2025] [INFO] Task created: ID=2, Name=File Sync, Priority=1, Energy=2
+[Thu Nov 06 14:09:38 2025] [INFO] Task admitted: ID=2, Name=File Sync
+[Thu Nov 06 14:09:38 2025] [INFO] Task created: ID=3, Name=Log Writer, Priority=2, Energy=1
+[Thu Nov 06 14:09:38 2025] [INFO] Task admitted: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:38 2025] [INFO] Task created: ID=4, Name=Video Processing, Priority=3, Energy=3
+[Thu Nov 06 14:09:38 2025] [INFO] Task admitted: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:38 2025] [INFO] Task created: ID=5, Name=Network Sync, Priority=2, Energy=2
+[Thu Nov 06 14:09:38 2025] [INFO] Task admitted: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:38 2025] [INFO] Task created: ID=6, Name=Emergency Backup, Priority=1, Energy=3
+[Thu Nov 06 14:09:38 2025] [INFO] Task admitted: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:38 2025] [INFO] Task created: ID=7, Name=Cache Cleanup, Priority=3, Energy=1
+[Thu Nov 06 14:09:38 2025] [INFO] Task admitted: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:38 2025] [INFO] Task created: ID=8, Name=Data Analysis, Priority=2, Energy=2
+[Thu Nov 06 14:09:38 2025] [INFO] Task admitted: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:38 2025] [INFO] Sample tasks created successfully
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduler started
+[Thu Nov 06 14:09:38 2025] [INFO] Entering scheduler main loop
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery-aware scheduling: Battery=100%, Mode=0
+[Thu Nov 06 14:09:38 2025] [DEBUG] Context switch: Old=0, New=1
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:38 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery drained by 1%.0 Current level: 99%
+[Thu Nov 06 14:09:38 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery-aware scheduling: Battery=99%, Mode=0
+[Thu Nov 06 14:09:38 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:38 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery drained by 2%.0 Current level: 97%
+[Thu Nov 06 14:09:38 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery-aware scheduling: Battery=97%, Mode=0
+[Thu Nov 06 14:09:38 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:38 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery drained by 1%.0 Current level: 96%
+[Thu Nov 06 14:09:38 2025] [INFO] Task preempted: ID=3
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery-aware scheduling: Battery=96%, Mode=0
+[Thu Nov 06 14:09:38 2025] [DEBUG] Context switch: Old=3, New=4
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:38 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery drained by 3%.0 Current level: 93%
+[Thu Nov 06 14:09:38 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery-aware scheduling: Battery=93%, Mode=0
+[Thu Nov 06 14:09:38 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:38 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery drained by 2%.0 Current level: 91%
+[Thu Nov 06 14:09:38 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery-aware scheduling: Battery=91%, Mode=0
+[Thu Nov 06 14:09:38 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:38 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery drained by 3%.0 Current level: 88%
+[Thu Nov 06 14:09:38 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery-aware scheduling: Battery=88%, Mode=0
+[Thu Nov 06 14:09:38 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:38 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery drained by 1%.0 Current level: 87%
+[Thu Nov 06 14:09:38 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:38 2025] [DEBUG] Battery-aware scheduling: Battery=87%, Mode=0
+[Thu Nov 06 14:09:38 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:38 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:38 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 2%.0 Current level: 85%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=85%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 1%.0 Current level: 84%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=84%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 2%.0 Current level: 82%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=82%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 1%.0 Current level: 81%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=3
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=81%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=3, New=4
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 3%.0 Current level: 78%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=78%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 2%.0 Current level: 76%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=76%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 3%.0 Current level: 73%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=73%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 1%.0 Current level: 72%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=72%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 2%.0 Current level: 70%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=70%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery drained by 1%.0 Current level: 69%
+[Thu Nov 06 14:09:39 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:39 2025] [DEBUG] Battery-aware scheduling: Battery=69%, Mode=0
+[Thu Nov 06 14:09:39 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:39 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:39 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 2%.0 Current level: 67%
+[Thu Nov 06 14:09:40 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=67%, Mode=0
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 1%.0 Current level: 66%
+[Thu Nov 06 14:09:40 2025] [INFO] Task completed: ID=3
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=66%, Mode=0
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 63%
+[Thu Nov 06 14:09:40 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=63%, Mode=0
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 2%.0 Current level: 61%
+[Thu Nov 06 14:09:40 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=61%, Mode=0
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 58%
+[Thu Nov 06 14:09:40 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=58%, Mode=0
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 1%.0 Current level: 57%
+[Thu Nov 06 14:09:40 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=57%, Mode=0
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 2%.0 Current level: 55%
+[Thu Nov 06 14:09:40 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=55%, Mode=0
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 1%.0 Current level: 54%
+[Thu Nov 06 14:09:40 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=54%, Mode=0
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 2%.0 Current level: 52%
+[Thu Nov 06 14:09:40 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=52%, Mode=0
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery drained by 3%.0 Current level: 49%
+[Thu Nov 06 14:09:40 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduler mode changed to: 1
+[Thu Nov 06 14:09:40 2025] [INFO] BALANCED mode: Balancing performance and energy
+[Thu Nov 06 14:09:40 2025] [DEBUG] Battery-aware scheduling: Battery=49%, Mode=1
+[Thu Nov 06 14:09:40 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:40 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:40 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 2%.0 Current level: 47%
+[Thu Nov 06 14:09:41 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=47%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 3%.0 Current level: 44%
+[Thu Nov 06 14:09:41 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=44%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 1%.0 Current level: 43%
+[Thu Nov 06 14:09:41 2025] [INFO] Task completed: ID=7
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=43%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=0, New=8
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 2%.0 Current level: 41%
+[Thu Nov 06 14:09:41 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=41%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 1%.0 Current level: 40%
+[Thu Nov 06 14:09:41 2025] [INFO] Task completed: ID=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=40%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=0, New=2
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 2%.0 Current level: 38%
+[Thu Nov 06 14:09:41 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=38%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 3%.0 Current level: 35%
+[Thu Nov 06 14:09:41 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=35%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 2%.0 Current level: 33%
+[Thu Nov 06 14:09:41 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=33%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 3%.0 Current level: 30%
+[Thu Nov 06 14:09:41 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=30%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery drained by 2%.0 Current level: 28%
+[Thu Nov 06 14:09:41 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:41 2025] [DEBUG] Battery-aware scheduling: Battery=28%, Mode=1
+[Thu Nov 06 14:09:41 2025] [DEBUG] Context switch: Old=8, New=2
+[Thu Nov 06 14:09:41 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:41 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 26%
+[Thu Nov 06 14:09:42 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=26%, Mode=1
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 3%.0 Current level: 23%
+[Thu Nov 06 14:09:42 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduler mode changed to: 2
+[Thu Nov 06 14:09:42 2025] [INFO] POWER_SAVE mode: Prioritizing low-energy tasks
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=23%, Mode=2
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 21%
+[Thu Nov 06 14:09:42 2025] [INFO] Task completed: ID=5
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=21%, Mode=2
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=0, New=6
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 3%.0 Current level: 18%
+[Thu Nov 06 14:09:42 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=18%, Mode=2
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 16%
+[Thu Nov 06 14:09:42 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=16%, Mode=2
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=8, New=2
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 14%
+[Thu Nov 06 14:09:42 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=14%, Mode=2
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 3%.0 Current level: 11%
+[Thu Nov 06 14:09:42 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=11%, Mode=2
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 3%.0 Current level: 8%
+[Thu Nov 06 14:09:42 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduler mode changed to: 3
+[Thu Nov 06 14:09:42 2025] [INFO] CRITICAL mode: Only critical tasks allowed
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=8%, Mode=3
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 6%
+[Thu Nov 06 14:09:42 2025] [INFO] Task completed: ID=8
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=6%, Mode=3
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=0, New=2
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery drained by 2%.0 Current level: 4%
+[Thu Nov 06 14:09:42 2025] [INFO] Task completed: ID=2
+[Thu Nov 06 14:09:42 2025] [DEBUG] Battery-aware scheduling: Battery=4%, Mode=3
+[Thu Nov 06 14:09:42 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:09:42 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:42 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery drained by 3%.0 Current level: 1%
+[Thu Nov 06 14:09:43 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=1%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:43 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:43 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:43 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] Context switch: Old=6, New=4
+[Thu Nov 06 14:09:43 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:43 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:43 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:43 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:43 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:43 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] Context switch: Old=6, New=4
+[Thu Nov 06 14:09:43 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:43 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:43 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:43 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:43 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:43 2025] [INFO] Task completed: ID=6
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:43 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:43 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:44 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:44 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:44 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:44 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:44 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:44 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:44 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:44 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:44 2025] [DEBUG] Battery-aware scheduling: Battery=0%, Mode=3
+[Thu Nov 06 14:09:44 2025] [DEBUG] No tasks in ready queue, idling...
+[Thu Nov 06 14:09:44 2025] [INFO] Maximum idle iterations reached - stopping scheduler
+[Thu Nov 06 14:09:44 2025] [INFO] Exiting scheduler main loop
+[Thu Nov 06 14:09:44 2025] [INFO] Scheduler stopped
+[Thu Nov 06 14:09:44 2025] [INFO] Task manager cleaned up
+[Thu Nov 06 14:09:44 2025] [INFO] Battery monitor cleaned up
+[Thu Nov 06 14:09:44 2025] [INFO] Scheduler cleaned up
+[Thu Nov 06 14:09:44 2025] [INFO] Battery monitor initialized successfully
+[Thu Nov 06 14:09:44 2025] [INFO] Task manager initialized successfully
+[Thu Nov 06 14:09:44 2025] [INFO] Scheduler initialized successfully
+[Thu Nov 06 14:09:44 2025] [INFO] Creating sample tasks...
+[Thu Nov 06 14:09:44 2025] [INFO] Task created: ID=1, Name=System Monitor, Priority=1, Energy=1
+[Thu Nov 06 14:09:44 2025] [INFO] Task admitted: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:44 2025] [INFO] Task created: ID=2, Name=File Sync, Priority=1, Energy=2
+[Thu Nov 06 14:09:44 2025] [INFO] Task admitted: ID=2, Name=File Sync
+[Thu Nov 06 14:09:44 2025] [INFO] Task created: ID=3, Name=Log Writer, Priority=2, Energy=1
+[Thu Nov 06 14:09:44 2025] [INFO] Task admitted: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:44 2025] [INFO] Task created: ID=4, Name=Video Processing, Priority=3, Energy=3
+[Thu Nov 06 14:09:44 2025] [INFO] Task admitted: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:44 2025] [INFO] Task created: ID=5, Name=Network Sync, Priority=2, Energy=2
+[Thu Nov 06 14:09:44 2025] [INFO] Task admitted: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:44 2025] [INFO] Task created: ID=6, Name=Emergency Backup, Priority=1, Energy=3
+[Thu Nov 06 14:09:44 2025] [INFO] Task admitted: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:44 2025] [INFO] Task created: ID=7, Name=Cache Cleanup, Priority=3, Energy=1
+[Thu Nov 06 14:09:44 2025] [INFO] Task admitted: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:44 2025] [INFO] Task created: ID=8, Name=Data Analysis, Priority=2, Energy=2
+[Thu Nov 06 14:09:44 2025] [INFO] Task admitted: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:44 2025] [INFO] Sample tasks created successfully
+[Thu Nov 06 14:09:44 2025] [INFO] Scheduler started
+[Thu Nov 06 14:09:44 2025] [INFO] Entering scheduler main loop
+[Thu Nov 06 14:09:44 2025] [DEBUG] Context switch: Old=0, New=1
+[Thu Nov 06 14:09:44 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:44 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:44 2025] [DEBUG] Battery drained by 1%.0 Current level: 99%
+[Thu Nov 06 14:09:44 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:44 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:44 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:44 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:44 2025] [DEBUG] Battery drained by 2%.0 Current level: 97%
+[Thu Nov 06 14:09:44 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:44 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:44 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:44 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:44 2025] [DEBUG] Battery drained by 1%.0 Current level: 96%
+[Thu Nov 06 14:09:44 2025] [INFO] Task preempted: ID=3
+[Thu Nov 06 14:09:44 2025] [DEBUG] Context switch: Old=3, New=4
+[Thu Nov 06 14:09:44 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:44 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:44 2025] [DEBUG] Battery drained by 3%.0 Current level: 93%
+[Thu Nov 06 14:09:44 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:44 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:44 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:44 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 2%.0 Current level: 91%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 88%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 1%.0 Current level: 87%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 2%.0 Current level: 85%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 1%.0 Current level: 84%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 2%.0 Current level: 82%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 1%.0 Current level: 81%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=3
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=3, New=4
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 78%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 2%.0 Current level: 76%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:45 2025] [DEBUG] Battery drained by 3%.0 Current level: 73%
+[Thu Nov 06 14:09:45 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:45 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:45 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:45 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 1%.0 Current level: 72%
+[Thu Nov 06 14:09:46 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 2%.0 Current level: 70%
+[Thu Nov 06 14:09:46 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 1%.0 Current level: 69%
+[Thu Nov 06 14:09:46 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 2%.0 Current level: 67%
+[Thu Nov 06 14:09:46 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 1%.0 Current level: 66%
+[Thu Nov 06 14:09:46 2025] [INFO] Task completed: ID=3
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 3%.0 Current level: 63%
+[Thu Nov 06 14:09:46 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 2%.0 Current level: 61%
+[Thu Nov 06 14:09:46 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 3%.0 Current level: 58%
+[Thu Nov 06 14:09:46 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 1%.0 Current level: 57%
+[Thu Nov 06 14:09:46 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:46 2025] [DEBUG] Battery drained by 2%.0 Current level: 55%
+[Thu Nov 06 14:09:46 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:46 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:46 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:46 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 1%.0 Current level: 54%
+[Thu Nov 06 14:09:47 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 2%.0 Current level: 52%
+[Thu Nov 06 14:09:47 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 3%.0 Current level: 49%
+[Thu Nov 06 14:09:47 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduler mode changed to: 1
+[Thu Nov 06 14:09:47 2025] [INFO] BALANCED mode: Balancing performance and energy
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 2%.0 Current level: 47%
+[Thu Nov 06 14:09:47 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 3%.0 Current level: 44%
+[Thu Nov 06 14:09:47 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 1%.0 Current level: 43%
+[Thu Nov 06 14:09:47 2025] [INFO] Task completed: ID=7
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=0, New=8
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 2%.0 Current level: 41%
+[Thu Nov 06 14:09:47 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 1%.0 Current level: 40%
+[Thu Nov 06 14:09:47 2025] [INFO] Task completed: ID=1
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=0, New=2
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 2%.0 Current level: 38%
+[Thu Nov 06 14:09:47 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:47 2025] [DEBUG] Battery drained by 3%.0 Current level: 35%
+[Thu Nov 06 14:09:47 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:47 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:47 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:47 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 2%.0 Current level: 33%
+[Thu Nov 06 14:09:48 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 3%.0 Current level: 30%
+[Thu Nov 06 14:09:48 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 2%.0 Current level: 28%
+[Thu Nov 06 14:09:48 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=8, New=2
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 2%.0 Current level: 26%
+[Thu Nov 06 14:09:48 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 3%.0 Current level: 23%
+[Thu Nov 06 14:09:48 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduler mode changed to: 2
+[Thu Nov 06 14:09:48 2025] [INFO] POWER_SAVE mode: Prioritizing low-energy tasks
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 2%.0 Current level: 21%
+[Thu Nov 06 14:09:48 2025] [INFO] Task completed: ID=5
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=0, New=6
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 3%.0 Current level: 18%
+[Thu Nov 06 14:09:48 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 2%.0 Current level: 16%
+[Thu Nov 06 14:09:48 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=8, New=2
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 2%.0 Current level: 14%
+[Thu Nov 06 14:09:48 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:48 2025] [DEBUG] Battery drained by 3%.0 Current level: 11%
+[Thu Nov 06 14:09:48 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:48 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:48 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:48 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 3%.0 Current level: 8%
+[Thu Nov 06 14:09:49 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduler mode changed to: 3
+[Thu Nov 06 14:09:49 2025] [INFO] CRITICAL mode: Only critical tasks allowed
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 2%.0 Current level: 6%
+[Thu Nov 06 14:09:49 2025] [INFO] Task completed: ID=8
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=0, New=2
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 2%.0 Current level: 4%
+[Thu Nov 06 14:09:49 2025] [INFO] Task completed: ID=2
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 3%.0 Current level: 1%
+[Thu Nov 06 14:09:49 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:49 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=6, New=4
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:49 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:49 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=6, New=4
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:49 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:49 2025] [INFO] Task completed: ID=6
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:49 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:49 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:49 2025] [DEBUG] Context switch: Old=4, New=4
+[Thu Nov 06 14:09:49 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:49 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:50 2025] [INFO] Task completed: ID=4
+[Thu Nov 06 14:09:50 2025] [INFO] Battery critical and queue empty - stopping scheduler
+[Thu Nov 06 14:09:50 2025] [INFO] Exiting scheduler main loop
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduler stopped
+[Thu Nov 06 14:09:50 2025] [INFO] Task manager cleaned up
+[Thu Nov 06 14:09:50 2025] [INFO] Battery monitor cleaned up
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduler cleaned up
+[Thu Nov 06 14:09:50 2025] [INFO] Battery monitor initialized successfully
+[Thu Nov 06 14:09:50 2025] [INFO] Task manager initialized successfully
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduler initialized successfully
+[Thu Nov 06 14:09:50 2025] [INFO] Creating sample tasks...
+[Thu Nov 06 14:09:50 2025] [INFO] Task created: ID=1, Name=System Monitor, Priority=1, Energy=1
+[Thu Nov 06 14:09:50 2025] [INFO] Task admitted: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:50 2025] [INFO] Task created: ID=2, Name=File Sync, Priority=1, Energy=2
+[Thu Nov 06 14:09:50 2025] [INFO] Task admitted: ID=2, Name=File Sync
+[Thu Nov 06 14:09:50 2025] [INFO] Task created: ID=3, Name=Log Writer, Priority=2, Energy=1
+[Thu Nov 06 14:09:50 2025] [INFO] Task admitted: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:50 2025] [INFO] Task created: ID=4, Name=Video Processing, Priority=3, Energy=3
+[Thu Nov 06 14:09:50 2025] [INFO] Task admitted: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:50 2025] [INFO] Task created: ID=5, Name=Network Sync, Priority=2, Energy=2
+[Thu Nov 06 14:09:50 2025] [INFO] Task admitted: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:50 2025] [INFO] Task created: ID=6, Name=Emergency Backup, Priority=1, Energy=3
+[Thu Nov 06 14:09:50 2025] [INFO] Task admitted: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:50 2025] [INFO] Task created: ID=7, Name=Cache Cleanup, Priority=3, Energy=1
+[Thu Nov 06 14:09:50 2025] [INFO] Task admitted: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:50 2025] [INFO] Task created: ID=8, Name=Data Analysis, Priority=2, Energy=2
+[Thu Nov 06 14:09:50 2025] [INFO] Task admitted: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:50 2025] [INFO] Sample tasks created successfully
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduler started
+[Thu Nov 06 14:09:50 2025] [INFO] Entering scheduler main loop
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=0, New=1
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 1%.0 Current level: 99%
+[Thu Nov 06 14:09:50 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 2%.0 Current level: 97%
+[Thu Nov 06 14:09:50 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 1%.0 Current level: 96%
+[Thu Nov 06 14:09:50 2025] [INFO] Task preempted: ID=3
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=3, New=4
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 3%.0 Current level: 93%
+[Thu Nov 06 14:09:50 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 2%.0 Current level: 91%
+[Thu Nov 06 14:09:50 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 3%.0 Current level: 88%
+[Thu Nov 06 14:09:50 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 1%.0 Current level: 87%
+[Thu Nov 06 14:09:50 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 2%.0 Current level: 85%
+[Thu Nov 06 14:09:50 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:50 2025] [DEBUG] Battery drained by 1%.0 Current level: 84%
+[Thu Nov 06 14:09:50 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:50 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:50 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:50 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 2%.0 Current level: 82%
+[Thu Nov 06 14:09:51 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 1%.0 Current level: 81%
+[Thu Nov 06 14:09:51 2025] [INFO] Task preempted: ID=3
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=3, New=4
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 3%.0 Current level: 78%
+[Thu Nov 06 14:09:51 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 2%.0 Current level: 76%
+[Thu Nov 06 14:09:51 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 3%.0 Current level: 73%
+[Thu Nov 06 14:09:51 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 1%.0 Current level: 72%
+[Thu Nov 06 14:09:51 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 2%.0 Current level: 70%
+[Thu Nov 06 14:09:51 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 1%.0 Current level: 69%
+[Thu Nov 06 14:09:51 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 2%.0 Current level: 67%
+[Thu Nov 06 14:09:51 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:51 2025] [DEBUG] Battery drained by 1%.0 Current level: 66%
+[Thu Nov 06 14:09:51 2025] [INFO] Task completed: ID=3
+[Thu Nov 06 14:09:51 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:09:51 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:51 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 3%.0 Current level: 63%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 2%.0 Current level: 61%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 3%.0 Current level: 58%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 1%.0 Current level: 57%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 2%.0 Current level: 55%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 1%.0 Current level: 54%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 2%.0 Current level: 52%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 3%.0 Current level: 49%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduler mode changed to: 1
+[Thu Nov 06 14:09:52 2025] [INFO] BALANCED mode: Balancing performance and energy
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 2%.0 Current level: 47%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:52 2025] [DEBUG] Battery drained by 3%.0 Current level: 44%
+[Thu Nov 06 14:09:52 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:52 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:52 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:52 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 1%.0 Current level: 43%
+[Thu Nov 06 14:09:53 2025] [INFO] Task completed: ID=7
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=0, New=8
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 2%.0 Current level: 41%
+[Thu Nov 06 14:09:53 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 1%.0 Current level: 40%
+[Thu Nov 06 14:09:53 2025] [INFO] Task completed: ID=1
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=0, New=2
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 2%.0 Current level: 38%
+[Thu Nov 06 14:09:53 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 3%.0 Current level: 35%
+[Thu Nov 06 14:09:53 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 2%.0 Current level: 33%
+[Thu Nov 06 14:09:53 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 3%.0 Current level: 30%
+[Thu Nov 06 14:09:53 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 2%.0 Current level: 28%
+[Thu Nov 06 14:09:53 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=8, New=2
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 2%.0 Current level: 26%
+[Thu Nov 06 14:09:53 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:53 2025] [DEBUG] Battery drained by 3%.0 Current level: 23%
+[Thu Nov 06 14:09:53 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduler mode changed to: 2
+[Thu Nov 06 14:09:53 2025] [INFO] POWER_SAVE mode: Prioritizing low-energy tasks
+[Thu Nov 06 14:09:53 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:53 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:53 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 2%.0 Current level: 21%
+[Thu Nov 06 14:09:54 2025] [INFO] Task completed: ID=5
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=0, New=6
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 3%.0 Current level: 18%
+[Thu Nov 06 14:09:54 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 2%.0 Current level: 16%
+[Thu Nov 06 14:09:54 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=8, New=2
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 2%.0 Current level: 14%
+[Thu Nov 06 14:09:54 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 3%.0 Current level: 11%
+[Thu Nov 06 14:09:54 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 3%.0 Current level: 8%
+[Thu Nov 06 14:09:54 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduler mode changed to: 3
+[Thu Nov 06 14:09:54 2025] [INFO] CRITICAL mode: Only critical tasks allowed
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 2%.0 Current level: 6%
+[Thu Nov 06 14:09:54 2025] [INFO] Task completed: ID=8
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=0, New=2
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 2%.0 Current level: 4%
+[Thu Nov 06 14:09:54 2025] [INFO] Task completed: ID=2
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 3%.0 Current level: 1%
+[Thu Nov 06 14:09:54 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:54 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:54 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:54 2025] [DEBUG] Context switch: Old=6, New=4
+[Thu Nov 06 14:09:54 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:54 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:55 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:55 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=6, New=4
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:55 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:55 2025] [INFO] Task completed: ID=6
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:55 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=4, New=4
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:09:55 2025] [INFO] Task completed: ID=4
+[Thu Nov 06 14:09:55 2025] [INFO] Battery critical and queue empty - stopping scheduler
+[Thu Nov 06 14:09:55 2025] [INFO] Exiting scheduler main loop
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduler stopped
+[Thu Nov 06 14:09:55 2025] [INFO] Task manager cleaned up
+[Thu Nov 06 14:09:55 2025] [INFO] Battery monitor cleaned up
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduler cleaned up
+[Thu Nov 06 14:09:55 2025] [INFO] Battery monitor initialized successfully
+[Thu Nov 06 14:09:55 2025] [INFO] Task manager initialized successfully
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduler initialized successfully
+[Thu Nov 06 14:09:55 2025] [INFO] Creating sample tasks...
+[Thu Nov 06 14:09:55 2025] [INFO] Task created: ID=1, Name=System Monitor, Priority=1, Energy=1
+[Thu Nov 06 14:09:55 2025] [INFO] Task admitted: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:55 2025] [INFO] Task created: ID=2, Name=File Sync, Priority=1, Energy=2
+[Thu Nov 06 14:09:55 2025] [INFO] Task admitted: ID=2, Name=File Sync
+[Thu Nov 06 14:09:55 2025] [INFO] Task created: ID=3, Name=Log Writer, Priority=2, Energy=1
+[Thu Nov 06 14:09:55 2025] [INFO] Task admitted: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:55 2025] [INFO] Task created: ID=4, Name=Video Processing, Priority=3, Energy=3
+[Thu Nov 06 14:09:55 2025] [INFO] Task admitted: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:55 2025] [INFO] Task created: ID=5, Name=Network Sync, Priority=2, Energy=2
+[Thu Nov 06 14:09:55 2025] [INFO] Task admitted: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:55 2025] [INFO] Task created: ID=6, Name=Emergency Backup, Priority=1, Energy=3
+[Thu Nov 06 14:09:55 2025] [INFO] Task admitted: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:55 2025] [INFO] Task created: ID=7, Name=Cache Cleanup, Priority=3, Energy=1
+[Thu Nov 06 14:09:55 2025] [INFO] Task admitted: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:55 2025] [INFO] Task created: ID=8, Name=Data Analysis, Priority=2, Energy=2
+[Thu Nov 06 14:09:55 2025] [INFO] Task admitted: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:55 2025] [INFO] Sample tasks created successfully
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduler started
+[Thu Nov 06 14:09:55 2025] [INFO] Entering scheduler main loop
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=0, New=1
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 1%.0 Current level: 99%
+[Thu Nov 06 14:09:55 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 2%.0 Current level: 97%
+[Thu Nov 06 14:09:55 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 1%.0 Current level: 96%
+[Thu Nov 06 14:09:55 2025] [INFO] Task preempted: ID=3
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=3, New=4
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:55 2025] [DEBUG] Battery drained by 3%.0 Current level: 93%
+[Thu Nov 06 14:09:55 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:55 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:55 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:55 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 2%.0 Current level: 91%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 3%.0 Current level: 88%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 1%.0 Current level: 87%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 2%.0 Current level: 85%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 1%.0 Current level: 84%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 2%.0 Current level: 82%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 1%.0 Current level: 81%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=3
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=3, New=4
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 3%.0 Current level: 78%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 2%.0 Current level: 76%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:56 2025] [DEBUG] Battery drained by 3%.0 Current level: 73%
+[Thu Nov 06 14:09:56 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:56 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:56 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:56 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:57 2025] [DEBUG] Battery drained by 1%.0 Current level: 72%
+[Thu Nov 06 14:09:57 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:57 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:57 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:57 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:57 2025] [DEBUG] Battery drained by 2%.0 Current level: 70%
+[Thu Nov 06 14:09:57 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:57 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:57 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:57 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:57 2025] [DEBUG] Battery drained by 1%.0 Current level: 69%
+[Thu Nov 06 14:09:57 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:57 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:57 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:57 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:57 2025] [DEBUG] Battery drained by 2%.0 Current level: 67%
+[Thu Nov 06 14:09:57 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:57 2025] [DEBUG] Context switch: Old=2, New=3
+[Thu Nov 06 14:09:57 2025] [INFO] Scheduled task: ID=3, Name=Log Writer
+[Thu Nov 06 14:09:57 2025] [INFO] Executing task: ID=3 for 100 ms
+[Thu Nov 06 14:09:57 2025] [DEBUG] Battery drained by 1%.0 Current level: 66%
+[Thu Nov 06 14:09:57 2025] [INFO] Task completed: ID=3
+[Thu Nov 06 14:09:57 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:09:57 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:57 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:57 2025] [DEBUG] Battery drained by 3%.0 Current level: 63%
+[Thu Nov 06 14:09:57 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:57 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:57 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:57 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:57 2025] [DEBUG] Battery drained by 2%.0 Current level: 61%
+[Thu Nov 06 14:09:57 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:57 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:57 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:57 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:57 2025] [DEBUG] Battery drained by 3%.0 Current level: 58%
+[Thu Nov 06 14:09:57 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:57 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:57 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:57 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:57 2025] [DEBUG] Battery drained by 1%.0 Current level: 57%
+[Thu Nov 06 14:09:57 2025] [INFO] Task preempted: ID=7
+[Thu Nov 06 14:09:57 2025] [DEBUG] Context switch: Old=7, New=8
+[Thu Nov 06 14:09:57 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:57 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 2%.0 Current level: 55%
+[Thu Nov 06 14:09:58 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 1%.0 Current level: 54%
+[Thu Nov 06 14:09:58 2025] [INFO] Task preempted: ID=1
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=1, New=2
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 2%.0 Current level: 52%
+[Thu Nov 06 14:09:58 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 3%.0 Current level: 49%
+[Thu Nov 06 14:09:58 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduler mode changed to: 1
+[Thu Nov 06 14:09:58 2025] [INFO] BALANCED mode: Balancing performance and energy
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 2%.0 Current level: 47%
+[Thu Nov 06 14:09:58 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 3%.0 Current level: 44%
+[Thu Nov 06 14:09:58 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=6, New=7
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=7, Name=Cache Cleanup
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=7 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 1%.0 Current level: 43%
+[Thu Nov 06 14:09:58 2025] [INFO] Task completed: ID=7
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=0, New=8
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 2%.0 Current level: 41%
+[Thu Nov 06 14:09:58 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=8, New=1
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=1, Name=System Monitor
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=1 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 1%.0 Current level: 40%
+[Thu Nov 06 14:09:58 2025] [INFO] Task completed: ID=1
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=0, New=2
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:58 2025] [DEBUG] Battery drained by 2%.0 Current level: 38%
+[Thu Nov 06 14:09:58 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:58 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:58 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:58 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 3%.0 Current level: 35%
+[Thu Nov 06 14:09:59 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 2%.0 Current level: 33%
+[Thu Nov 06 14:09:59 2025] [INFO] Task preempted: ID=5
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=5, New=6
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 3%.0 Current level: 30%
+[Thu Nov 06 14:09:59 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 2%.0 Current level: 28%
+[Thu Nov 06 14:09:59 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=8, New=2
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 2%.0 Current level: 26%
+[Thu Nov 06 14:09:59 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 3%.0 Current level: 23%
+[Thu Nov 06 14:09:59 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduler mode changed to: 2
+[Thu Nov 06 14:09:59 2025] [INFO] POWER_SAVE mode: Prioritizing low-energy tasks
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=4, New=5
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=5, Name=Network Sync
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=5 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 2%.0 Current level: 21%
+[Thu Nov 06 14:09:59 2025] [INFO] Task completed: ID=5
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=0, New=6
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 3%.0 Current level: 18%
+[Thu Nov 06 14:09:59 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 2%.0 Current level: 16%
+[Thu Nov 06 14:09:59 2025] [INFO] Task preempted: ID=8
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=8, New=2
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:09:59 2025] [DEBUG] Battery drained by 2%.0 Current level: 14%
+[Thu Nov 06 14:09:59 2025] [INFO] Task preempted: ID=2
+[Thu Nov 06 14:09:59 2025] [DEBUG] Context switch: Old=2, New=4
+[Thu Nov 06 14:09:59 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:09:59 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 3%.0 Current level: 11%
+[Thu Nov 06 14:10:00 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 3%.0 Current level: 8%
+[Thu Nov 06 14:10:00 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduler mode changed to: 3
+[Thu Nov 06 14:10:00 2025] [INFO] CRITICAL mode: Only critical tasks allowed
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=6, New=8
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=8, Name=Data Analysis
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=8 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 2%.0 Current level: 6%
+[Thu Nov 06 14:10:00 2025] [INFO] Task completed: ID=8
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=0, New=2
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=2, Name=File Sync
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=2 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 2%.0 Current level: 4%
+[Thu Nov 06 14:10:00 2025] [INFO] Task completed: ID=2
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 3%.0 Current level: 1%
+[Thu Nov 06 14:10:00 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:10:00 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=6, New=4
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:10:00 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:10:00 2025] [INFO] Task preempted: ID=6
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=6, New=4
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:10:00 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=4, New=6
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=6, Name=Emergency Backup
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=6 for 100 ms
+[Thu Nov 06 14:10:00 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:10:00 2025] [INFO] Task completed: ID=6
+[Thu Nov 06 14:10:00 2025] [DEBUG] Context switch: Old=0, New=4
+[Thu Nov 06 14:10:00 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:10:00 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:10:01 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:10:01 2025] [INFO] Task preempted: ID=4
+[Thu Nov 06 14:10:01 2025] [DEBUG] Context switch: Old=4, New=4
+[Thu Nov 06 14:10:01 2025] [INFO] Scheduled task: ID=4, Name=Video Processing
+[Thu Nov 06 14:10:01 2025] [INFO] Executing task: ID=4 for 100 ms
+[Thu Nov 06 14:10:01 2025] [DEBUG] Battery drained by 3%.0 Current level: 0%
+[Thu Nov 06 14:10:01 2025] [INFO] Task completed: ID=4
+[Thu Nov 06 14:10:01 2025] [INFO] Battery critical and queue empty - stopping scheduler
+[Thu Nov 06 14:10:01 2025] [INFO] Exiting scheduler main loop
+[Thu Nov 06 14:10:01 2025] [INFO] Scheduler stopped
+[Thu Nov 06 14:10:01 2025] [INFO] Simulation completed
+[Thu Nov 06 14:10:01 2025] [INFO] Task manager cleaned up
+[Thu Nov 06 14:10:01 2025] [INFO] Battery monitor cleaned up
+[Thu Nov 06 14:10:01 2025] [INFO] Scheduler cleaned up
+=== Logging closed ===
