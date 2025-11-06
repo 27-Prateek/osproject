@@ -2,10 +2,10 @@
 
 Developed as an Operating Systems course project.
 
-Group Members:
-202351106 - Nishit Prajapati
-202351109 -Prateek
-202351097 - Parth
+Group Members:\\
+202351106 - Nishit Prajapati\\
+202351109 - Prateek\\
+202351097 - Parth\\
 
 
 # Battery-Aware Task Scheduler
