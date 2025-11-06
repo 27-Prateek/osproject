@@ -71,7 +71,7 @@ osproject/
 - Linux/Unix environment (tested on Ubuntu)
 
 ### Compilation
-
+Note: Perform all the below commands in the terminal at root directory.
 Build all components:
 ```bash
 make clean
