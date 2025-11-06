@@ -127,7 +127,7 @@ Provides menu-driven interface with 11 options: Create Sample Tasks, Add Custom 
 
 | Algorithm | Energy Consumed | Tasks Completed | Context Switches | Battery Remaining |
 |-----------|----------------|-----------------|------------------|-------------------|
-| Battery-Aware | 114 units | 7/8 | 53 | 0% |
+| Battery-Aware | 114 units | 7/8 | 53 | 8% |
 | FCFS | 120 units | 8/8 | 55 | 0% |
 | SJF | 120 units | 8/8 | 55 | 0% |
 | Round Robin | 120 units | 8/8 | 55 | 0% |
